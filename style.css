@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300;0,400;0,800;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scrollbar-color: var(--hover-color) var(--main-color);
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--hover-color);
+  border-radius: 5px;
+}
+:root {
+  --main-color: rgb(19, 18, 18);
+  --secundary-color: rgb(56, 35, 4);
+  --terciary-color: rgba(219, 214, 198, 0.856);
+  --hover-color: rgba(150, 108, 46, 0.473);
+  --accent: rgba(233, 190, 125, 0.363);
+  --second-main: rgba(19, 18, 18, 0.918);
+}
+header .born {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  border-bottom: 2px solid var(--accent);
+}
+header .born ul {
+  height: 3.8vh;
+  width: 100%;
+  size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .born ul li {
+  color: var(--terciary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90%;
+  height: 95%;
+  width: 10vw;
+  transition: all 1s ease-in-out;
+}
+header .born img {
+  width: 100%;
+}
+header .born .pot {
+  width: 5.5vh;
+  padding: 0.1rem;
+  border-radius: 45%;
+  transition: all 1s ease-in-out;
+}
+header .born .pot:hover {
+  background-color: rgba(221, 163, 77, 0.767);
+  box-shadow: 0px 0px 15px 5px rgba(209, 146, 9, 0.74);
+}
+/* --------------------------------------------------------------------HERO */
+header .hero {
+  height: 70vh;
+  background-image: url(./public/hero.PNG);
+  background-size: 115%;
+  background-position-x: 0vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+}
+header .gradient {
+  height: 100%;
+  background: rgb(19, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(19, 18, 18, 1) 0%,
+    rgba(19, 18, 18, 0.35898109243697474) 50%,
+    rgba(19, 18, 18, 1) 100%
+  );
+  border-bottom: 2px solid #615039;
+}
+header .hero div .h1 {
+  height: 78%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hero h1 {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--terciary-color);
+  font-size: 5vw;
+  letter-spacing: 1.5vw;
+  border-bottom: 1px solid var(--terciary-color);
+  transition: all 1.2s ease-in-out;
+  border-top: 1px solid var(--terciary-color);
+  transition: all 1s ease-in-out;
+}
+header h1:hover {
+  width: 100%;
+  background-color: var(--hover-color);
+}
+header .hero nav {
+  height: 22%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .hero ul {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .hero li {
+  height: 100%;
+  width: 30%;
+  transition: all 0.6s ease-in-out;
+}
+header .hero li:hover {
+  width: 50%;
+  background-color: var(--hover-color);
+}
+header .hero a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--terciary-color);
+  border-left: 1px solid var(--terciary-color);
+  border-right: 1px solid var(--terciary-color);
+  transition: all 0.6s ease-in-out;
+}
+header .hero a:hover {
+  font-size: 120%;
+}
+/*--------------------------------------------------------------------- main */
+main .respiradero {
+  background-color: rgb(14, 2, 10);
+  background-image: url("./Respiraderos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1vw solid var(--hover-color);
+}
+main .gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(92, 72, 18, 0.123) 50%,
+    rgba(0, 0, 0, 0.726) 100%
+  );
+}
+main .respiradero h4 {
+  color: var(--terciary-color);
+  font-style: italic;
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 50%;
+  margin-top: 15vw;
+  transition: all 1s ease-in-out;
+}
+/* --------------------------------------------------------------galery */
+main .galery {
+  background-color: var(--main-color);
+  height: 40vw;
+}
+main .galery div {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5vw solid var(--hover-color);
+  transition: all 1s ease-in-out;
+}
+main .galery h2 {
+  color: var(--terciary-color);
+  display: flex;
+  width: 18.5vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+  border-bottom: 1px solid var(--terciary-color);
+  border-top: 1px solid var(--terciary-color);
+  margin-top: 4vw;
+  transition: all 1s ease-in-out;
+}
+main .galery h2:hover {
+  width: 60%;
+  background-color: var(--hover-color);
+}
+main .galery nav {
+  height: 35vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .galery ul {
+  height: 25vw;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main li {
+  width: 40%;
+  height: 20vw;
+  border-radius: 0.6vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .first {
+  background-image: url(/cine.png);
+  background-size: 165%;
+  background-position-y: -1vw;
+  background-position-x: -7vw;
+  background-repeat: no-repeat;
+  transition: all 1.3s ease-in-out;
+  overflow: hidden;
+}
+main .second {
+  background-image: url(/pintura.jpg);
+  background-size: cover;
+  background-size: 150%;
+  background-position-y: -10vw;
+  background-position-x: -39px;
+  background-repeat: no-repeat;
+  transition: all 1.3s ease-in-out;
+  overflow: hidden;
+}
+main .third {
+  background-image: url(/series.png);
+  background-size: cover;
+  background-size: 190%;
+  background-position-y: -2pvw;
+  background-position-x: -11vw;
+  background-repeat: no-repeat;
+  transition: all 1.3s ease-in-out;
+}
+
+main .fourth {
+  background-image: url(/varios.jpg);
+  background-size: cover;
+  background-size: 130%;
+  background-position-y: -2vw;
+  background-position-x: -3vw;
+  background-repeat: no-repeat;
+  transition: all 1.3s ease-in-out;
+}
+main .galery a {
+  color: var(--main-color);
+  font-size: 5vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.082);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.123);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0.6vw;
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  text-shadow: -1px 0 var(--terciary-color), 0 1px var(--terciary-color),
+    1px 0 var(--terciary-color), 0 -1px var(--terciary-color);
+  transition: all 1s ease-in-out;
+}
+main .galery li:hover {
+  width: 50%;
+  height: 25vw;
+}
+main .galery a:hover {
+  background: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  font-size: 290%;
+}
+/* ------------------------------------------------------------------biography */
+main .biography {
+  background-color: var(--main-color);
+  height: 60vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+  border-bottom: 0.5vw solid var(--hover-color);
+  border-top: 0.5vw solid var(--hover-color);
+}
+main .h2 {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+main .h2 h2 {
+  color: var(--terciary-color);
+  display: flex;
+  width: 18.5vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+  border-bottom: 1px solid var(--terciary-color);
+  border-top: 1px solid var(--terciary-color);
+  margin-top: 4vw;
+  transition: all 1s ease-in-out;
+}
+main .h2 h2:hover {
+  width: 60%;
+  background-color: var(--hover-color);
+}
+main .biography .p {
+  background-color: var(--main-color);
+  color: var(--terciary-color);
+  height: 65%;
+  width: 70vw;
+  padding-top: 3vw;
+  margin-bottom: 5vw;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+main .biography p {
+  font-size: 1.5vw;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+main .biography p::first-letter {
+  font-size: 5vw;
+  color: var(--hover-color);
+}
+/* ---------------------------------------------------------------------museum */
+main .museum {
+  background-color: var(--main-color);
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  border-bottom: 0.5vw solid var(--hover-color);
+}
+body {
+  background-color: var(--main-color);
+}
+
+main .museum h2 {
+  margin-bottom: 5vw;
+}
+main .museum .h2 {
+  height: 20%;
+  width: 100%;
+}
+main .museum .but {
+  background-color: green;
+  height: 39vw;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 4vw;
+}
+main .museum button {
+  height: 13%;
+  width: 30%;
+  margin-bottom: 4vw;
+  font-size: 3vw;
+}
+/* ----------------------------------------------------------------footer */
+footer .contact {
+  background-color: var(--terciary-color);
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5vw solid var(--main-color);
+}
+footer .contact ul {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contact li {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+}
+footer img {
+  width: 3vw;
+}
+footer .youtube {
+  padding-right: 20vw;
+}
+footer .instagram {
+  padding-left: 20vw;
+}
+/* ----------------------------------------------------------media */
+@media screen and (max-width: 600px) {
+  header .born ul li {
+    width: 30vw;
+  }
+  header .hero {
+    background-position-x: -10vw;
+  }
+  header .hero nav {
+    flex-direction: column;
+  }
+  header .hero ul {
+    width: 90%;
+    height: 7vh;
+  }
+  header .hero h1 {
+    font-size: 8vw;
+    margin-top: 30vw;
+    letter-spacing: 0vw;
+  }
+  main .respiradero h4 {
+    width: 90%;
+    font-size: 2vw;
+  }
+  /* -----------------------------------------------------------media galery */
+  main .galery {
+    height: 80vw;
+  }
+  main .galery nav {
+    height: 75vw;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main .galery h2 {
+    margin-top: 0;
+    font-size: 10vw;
+    width: 30vw;
+  }
+  main .galery ul {
+    height: 31.95vw;
+    width: 90%;
+  }
+  main .galery li {
+    width: 36%;
+    height: 28vw;
+  }
+  main .first {
+    background-position-y: -1vw;
+    background-position-x: -10vw;
+  }
+  main .second {
+    background-position-y: -20vw;
+    background-position-x: -10vw;
+  }
+  main .third {
+    background-position-y: -3vw;
+    background-position-x: -16.5vw;
+  }
+  main .fourth {
+    background-position-y: -2vw;
+    background-position-x: -4vw;
+  }
+  main .galery li:hover {
+    width: 45%;
+    height: 28vw;
+  }
+  /* ---------------------------------------------------------------rest */
+  main .biography .h2 {
+    height: 25%;
+  }
+  main .biography h2 {
+    margin-top: 1.5vw;
+    font-size: 10vw;
+    width: 30vw;
+  }
+  main .biography .p {
+    width: 60%;
+    height: 85%;
+  }
+  main .biography p {
+    font-size: 2vw;
+  }
+  main .museum {
+    height: 40vh;
+  }
+  main .museum h2 {
+    margin-top: 0vw;
+    font-size: 10vw;
+    width: 30vw;
+  }
+  main .museum .h2 {
+    padding-bottom: 6vw;
+  }
+  main .museum button {
+    height: 13%;
+    width: 70%;
+    margin-bottom: 4vw;
+  }
+
+  footer .contact {
+    height: 6vh;
+  }
+}
