@@ -338,7 +338,7 @@ main .h2 h2 {
   letter-spacing: 0.5vw;
   border-bottom: 1px solid var(--terciary-color);
   border-top: 1px solid var(--terciary-color);
-  margin-top: 4vw;
+  margin-top: 1vw;
   transition: all 1s ease-in-out;
 }
 main .h2 h2:hover {
@@ -526,7 +526,7 @@ footer .instagram {
     height: 40vh;
   }
   main .museum h2 {
-    margin-top: 0vw;
+    margin-top: 1vw;
     font-size: 10vw;
     width: 30vw;
   }
