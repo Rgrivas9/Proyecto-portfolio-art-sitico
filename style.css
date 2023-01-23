@@ -306,7 +306,7 @@ main .galery a:hover {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   border: none;
-  font-size: 290%;
+  font-size: 210%;
 }
 /* ------------------------------------------------------------------biography */
 main .biography {
@@ -506,6 +506,9 @@ footer .instagram {
     width: 45%;
     height: 28vw;
   }
+  main .galery a:hover {
+    font-size: 200%;
+  }
   /* ---------------------------------------------------------------rest */
   main .biography .h2 {
     height: 25%;
@@ -523,7 +526,9 @@ footer .instagram {
     font-size: 2vw;
   }
   main .museum {
-    height: 40vh;
+    height: 60vw;
+    gap: 1vw;
+    padding-top: 4vw;
   }
   main .museum h2 {
     margin-top: 1vw;
@@ -531,7 +536,7 @@ footer .instagram {
     width: 30vw;
   }
   main .museum .h2 {
-    padding-bottom: 6vw;
+    padding-bottom: 0vw;
   }
   main .museum button {
     height: 13%;
@@ -541,5 +546,63 @@ footer .instagram {
 
   footer .contact {
     height: 6vh;
+  }
+}
+@media screen and (max-width: 350px) {
+  main .galery a:hover {
+    font-size: 120%;
+  }
+}
+@media screen and (max-width: 300px) {
+  header .hero {
+    height: 210vw;
+    background-position-x: -35vw;
+  }
+  header .hero nav {
+    gap: 6vw;
+    padding-bottom: 25vw;
+  }
+  header .hero ul {
+    flex-direction: column;
+    gap: 5vw;
+  }
+  header .hero li {
+    width: 40vw;
+  }
+  header .hero li:hover {
+    width: 100%;
+  }
+  footer .youtube {
+    padding: 0;
+  }
+  footer .instagram {
+    padding: 0;
+  }
+  footer a {
+    font-size: 5vw;
+  }
+  footer img {
+    width: 10vw;
+  }
+  footer ul {
+    gap: 22vw;
+  }
+  main .galery a:hover {
+    font-size: 120%;
+  }
+}
+@media screen and (max-width: 200px) {
+  main .galery a:hover {
+    font-size: 100%;
+  }
+  header .hero {
+    height: 150vw;
+    background-position-x: -35vw;
+  }
+  header .hero a {
+    font-size: 8vw;
+  }
+  header .hero nav {
+    padding-bottom: 30vw;
   }
 }
