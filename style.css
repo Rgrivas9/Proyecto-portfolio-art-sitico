@@ -70,7 +70,7 @@ header .born .pot:hover {
 /* --------------------------------------------------------------------HERO */
 header .hero {
   height: 70vh;
-  background-image: url(./hero.png);
+  background-image: url(/hero.png);
   background-size: 115%;
   background-position-x: 0vw;
   background-size: cover;
@@ -152,7 +152,7 @@ header .hero a:hover {
 /*--------------------------------------------------------------------- main */
 main .respiradero {
   background-color: rgb(14, 2, 10);
-  background-image: url("./Respiraderos.png");
+  background-image: url(/Respiraderos.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 30.2vw;
